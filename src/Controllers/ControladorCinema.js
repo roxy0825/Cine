@@ -32,7 +32,7 @@ import {pintarPeliculas } from "../helper/pintarPeliculas.js"
 //Recorriendo un arreglo en js 
 
 let fila = document.getElementById("fila")
-
+//Llamo a la funcion pintarPeliculas
 pintarPeliculas(peliculas)
 
 
@@ -40,17 +40,23 @@ pintarPeliculas(peliculas)
 let peliculaSeleccionada={}
 fila.addEventListener("click",function(evento){
     peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
-    console.log(evento.target.parentElement.querySelector('h2').textContent)
-    console.log(evento.target.parentElement.querySelector('h3').textContent)
-    console.log(evento.target.parentElement.querySelector('h4').textContent)
-    console.log(evento.target.parentElement.querySelector('h5').textContent)
-    console.log(evento.target.parentElement.querySelector('h6').textContent)
-    console.log(evento.target.parentElement.querySelector('p').textContent)
+    peliculaSeleccionada.nombre=evento.target.parentElement.querySelector('h1').textContent//nombre
+    peliculaSeleccionada.genero=evento.target.parentElement.querySelector('h2').textContent//genero
+    peliculaSeleccionada.idioma=evento.target.parentElement.querySelector('h3').textContent//idioma
+    peliculaSeleccionada.sinopsis=evento.target.parentElement.querySelector('h4').textContent//sinopsis
+    peliculaSeleccionada.director=evento.target.parentElement.querySelector('h5').textContent//director
+    peliculaSeleccionada.actores=evento.target.parentElement.querySelector('h6').textContent//actor
 
-  // window.Location.href="./scr/views/ampliarInfoPelicula.html"
+    console.log(peliculaSeleccionada)
+
+    //LLAMANDO A LA MEMORIA DEL NAVEGADOR
+    localStorage.setItem("peliculaSeleccionada",JSON.stringify(peliculaSeleccionada)) 
+
+    //rederirecciona a otra vista
+   window.location.href="./src/views/ampliarInfoPelicula.html"
+
+  
 })
-
-
 
 
 
