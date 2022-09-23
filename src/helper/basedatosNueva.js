@@ -2,13 +2,13 @@ export let peliculasNuevas = [
     {
         nombre:"Caceria de brujas",
         genero:"Terror",
-        duracion:92,
+        duracion:"92",
         poster:"https://firebasestorage.googleapis.com/v0/b/cinerg-2ad15.appspot.com/o/12.png?alt=media&token=ee23c529-21f2-4f97-bfbc-ae61bc1b5929",
         sinopsis:"Cacería de Brujas está situada en un Estados Unidos moderno en el que las brujas son reales y la brujería es ilegal, una adolescente debe enfrentarse a sus propios demonios y prejuicios mientras ayuda a dos brujas a evitar a las fuerzas de la autoridad y a cruzar la frontera sur para refugiarse en México.",
         clasificación:"+12",
         idioma:"Español",
         director:"DavidElle Callahan",
-        actores:"Elizabeth Mitchell, Gideon Adlon, Ashley Bell"
+        actores:["Elizabeth Mitchell, Gideon Adlon, Ashley Bell"]
 
     },
     {
@@ -20,7 +20,7 @@ export let peliculasNuevas = [
         clasificación:"+12",
         idioma:"Español",
         director:"Scott Mann",
-        actores:"Grace Caroline Currey, Virginia Gardner, Jeffrey Dean Morgan"
+        actores:["Grace Caroline Currey, Virginia Gardner, Jeffrey Dean Morgan"]
     },
     {
         nombre:"Lo que arde",
@@ -31,7 +31,7 @@ export let peliculasNuevas = [
         clasificación:"+18",
         idioma:"Español" ,
         director:"Oliver Laxe.",
-        actores:"Amador Arias, Benedicta Sánchez."
+        actores:["Amador Arias, Benedicta Sánchez."]
     },
     ,
     {
@@ -43,7 +43,7 @@ export let peliculasNuevas = [
         clasificación:"+12",
         idioma:"Ingles" ,
         director:"Barry Levinson.",
-        actores:"Ben Foster, Billy Magnussen, Vicky Krieps."
+        actores:["Ben Foster, Billy Magnussen, Vicky Krieps."]
     },
     ,
     {
@@ -55,7 +55,7 @@ export let peliculasNuevas = [
         clasificación:"+18",
         idioma:"Español" ,
         director:"George Miller.",
-        actores:"Idris Elba, Tilda Swinton, Alyla Browne, Pia Thunderbolt."
+        actores:["Idris Elba, Tilda Swinton, Alyla Browne, Pia Thunderbolt."]
     }
 
 ]

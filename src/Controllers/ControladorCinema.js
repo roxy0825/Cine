@@ -25,29 +25,34 @@
 // console.log(persona.comida.precio)
 
 import {peliculas } from "../helper/baseDatos.js"
-import {peliculasNuevas } from "../helper/basedatodNueva"
-
+import {peliculasNuevas } from "../helper/basedatosNueva.js"
 import {pintarPeliculas } from "../helper/pintarPeliculas.js"
 
 //Recorriendo un arreglo en js 
 
 let fila = document.getElementById("fila")
+let fila2=document.getElementById("fila2")
 //Llamo a la funcion pintarPeliculas
-pintarPeliculas(peliculas)
+pintarPeliculas(peliculas,fila)
+pintarPeliculas(peliculasNuevas,fila2)
 
 
 //Detectando seleccion de una pelicula
 let peliculaSeleccionada={}
-fila.addEventListener("click",function(evento){
-    peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
-    peliculaSeleccionada.nombre=evento.target.parentElement.querySelector('h1').textContent//nombre
-    peliculaSeleccionada.genero=evento.target.parentElement.querySelector('h2').textContent//genero
-    peliculaSeleccionada.idioma=evento.target.parentElement.querySelector('h3').textContent//idioma
-    peliculaSeleccionada.sinopsis=evento.target.parentElement.querySelector('h4').textContent//sinopsis
-    peliculaSeleccionada.director=evento.target.parentElement.querySelector('h5').textContent//director
-    peliculaSeleccionada.actores=evento.target.parentElement.querySelector('h6').textContent//actor
 
+fila.addEventListener("click",function(evento){
+    console.log(evento.target.parentElement)
+    peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
+    peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h3').textContent)//nombre
+    peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('p')[0].textContent)//genero
+    peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelectorAll('p')[1].textContent)
+    peliculaSeleccionada.duracion=(evento.target.parentElement.querySelectorAll('p')[2].textContent)
+    peliculaSeleccionada.actores=(evento.target.parentElement.querySelectorAll('p')[3].textContent)
+    peliculaSeleccionada.director=(evento.target.parentElement.querySelectorAll('p')[4].textContent)
+    peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelectorAll('p')[5].textContent)
+    peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h6').textContent)
     console.log(peliculaSeleccionada)
+
 
     //LLAMANDO A LA MEMORIA DEL NAVEGADOR
     localStorage.setItem("peliculaSeleccionada",JSON.stringify(peliculaSeleccionada)) 
@@ -60,71 +65,23 @@ fila.addEventListener("click",function(evento){
 
 
 
-peliculasNuevas.forEach(function(peli){
-    // console.log(pelicula)
-    
+fila2.addEventListener("click",function(evento){
+    console.log(evento.target.parentElement)
+    peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
+    peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h3').textContent)
+    peliculaSeleccionada.genero=(evento.target.parentElement.querySelectorAll('p')[0].textContent)
+    peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelectorAll('p')[1].textContent)
+    peliculaSeleccionada.duracion=(evento.target.parentElement.querySelectorAll('p')[2].textContent)
+    peliculaSeleccionada.actores=(evento.target.parentElement.querySelectorAll('p')[3].textContent)
+    peliculaSeleccionada.director=(evento.target.parentElement.querySelectorAll('p')[4].textContent)
+    peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelectorAll('p')[5].textContent)
+    peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h6').textContent)
+    console.log(peliculaSeleccionada)
 
-    //1. creamos una columna para cada pelicula
-    let columna=document.createElement("div")
-    columna.classList.add("col")
+    //llamando a la memoria del navegador
 
-    //2.Creamos una tarjeta para cada pelicula
-    let tarjeta=document.createElement("div")
-    tarjeta.classList.add("card","h-100")
+    localStorage.setItem("peliculaSeleccionada",JSON.stringify(peliculaSeleccionada))
 
-    //3.Creamos una foto para cada pelicula
-    let poster=document.createElement("img")
-    poster.classList.add("card-img-top")
-    poster.src=peli.poster
-
-    //4.Creamos el nombre de la pelicula 
-    let nombre = document.createElement("h3")
-    nombre.classList.add("card-title")
-    nombre.textContent=peli.nombre
-
-    //5.Creamos el genero de cada pelicula 
-    let genero = document.createElement("h5")
-    genero.classList.add("text-star")
-    genero.textContent="Genero:"+peli.genero
-
-    //6.Creamos el idioma de cada pelicula 
-    let idioma = document.createElement("h6")
-    idioma.classList.add("fw-bold")
-    idioma.textContent="Idioma: " + peli.idioma
-
-    //7.Creamos la sinopsis de cada pelicula 
-    let sinopsis = document.createElement("p")
-    //sinopsis.classList.add("d-none")
-    sinopsis.textContent=peli.sinopsis
-
-//7.Creamos el director de cada pelicula
-    let director = document.createElement("h6")
-    director.classList.add("fw-bold")
-    director.textContent="Director: " + peli.director
-    
-
-    //7.Creamos los actores de cada pelicula
-    let actores = document.createElement("h6")
-    actores.classList.add("fw-bold")
-    actores.textContent="Actores: " + peli.actores
-
-    //padres e hijos 
-    tarjeta.appendChild(poster)
-    tarjeta.appendChild(nombre)
-    tarjeta.appendChild(genero)
-    tarjeta.appendChild(idioma)
-    tarjeta.appendChild(sinopsis)
-    tarjeta.appendChild(director)
-    tarjeta.appendChild(actores)
-
-    columna.appendChild(tarjeta)
-    fila2.appendChild(columna)
-
-
-
-})
-
-//Detectando seleccion de una pelicula
-fila2.addEventListener("click",function(){
-    alert("Estas seleccionando una pelicula")
+//  Redireccionaa otra vista
+    window.location.href="./src/views/ampliarinfopelicula.html"
 })
