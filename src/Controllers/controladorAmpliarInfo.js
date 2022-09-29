@@ -10,7 +10,7 @@ let genero=datosPeliculasSeleccionada.genero
 let sinopsis=datosPeliculasSeleccionada.sinopsis
 let duracion=datosPeliculasSeleccionada.duracion
 let actor=datosPeliculasSeleccionada.actor
-let clasificacion=datosPeliculaSeleccionada.clasificacion
+let clasificacion=datosPeliculasSeleccionada.clasificacion
 let idioma=datosPeliculasSeleccionada.idioma
 let director=datosPeliculasSeleccionada.director
 

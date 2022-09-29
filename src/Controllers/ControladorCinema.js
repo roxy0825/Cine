@@ -24,7 +24,7 @@
 // console.log(persona.equiposFavoritos[1])
 // console.log(persona.comida.precio)
 
-import {peliculas } from "../helper/baseDatos.js"
+import { peliculas } from "../helper/baseDatos.js"
 import {peliculasNuevas } from "../helper/basedatosNueva.js"
 import {pintarPeliculas } from "../helper/pintarPeliculas.js"
 
@@ -42,16 +42,16 @@ let peliculaSeleccionada={}
 
 fila.addEventListener("click",function(evento){
     console.log(evento.target.parentElement)
-    peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
-    peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h3').textContent)//nombre
-    peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('p')[0].textContent)//genero
-    peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelectorAll('p')[1].textContent)
-    peliculaSeleccionada.duracion=(evento.target.parentElement.querySelectorAll('p')[2].textContent)
-    peliculaSeleccionada.actores=(evento.target.parentElement.querySelectorAll('p')[3].textContent)
-    peliculaSeleccionada.director=(evento.target.parentElement.querySelectorAll('p')[4].textContent)
-    peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelectorAll('p')[5].textContent)
-    peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h6').textContent)
-    console.log(peliculaSeleccionada)
+     peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
+    // peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h3').textContent)//nombre
+    // peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('p')[0].textContent)//genero
+    // peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelectorAll('p')[1].textContent)
+    // peliculaSeleccionada.duracion=(evento.target.parentElement.querySelectorAll('p')[2].textContent)
+    // peliculaSeleccionada.actores=(evento.target.parentElement.querySelectorAll('p')[3].textContent)
+    // peliculaSeleccionada.director=(evento.target.parentElement.querySelectorAll('p')[4].textContent)
+    // peliculaSeleccionada.clasificacion=(evento.target.parentElement.querySelectorAll('p')[5].textContent)
+    // peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h6').textContent)
+    // console.log(peliculaSeleccionada)
 
 
     //LLAMANDO A LA MEMORIA DEL NAVEGADOR
@@ -68,7 +68,7 @@ fila.addEventListener("click",function(evento){
 fila2.addEventListener("click",function(evento){
     console.log(evento.target.parentElement)
     peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
-    peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h3').textContent)
+    peliculaSeleccionada.nombre=(evento.target.parentElement.querySelector('h4').textContent)
     peliculaSeleccionada.genero=(evento.target.parentElement.querySelectorAll('p')[0].textContent)
     peliculaSeleccionada.sipnosis=(evento.target.parentElement.querySelectorAll('p')[1].textContent)
     peliculaSeleccionada.duracion=(evento.target.parentElement.querySelectorAll('p')[2].textContent)
