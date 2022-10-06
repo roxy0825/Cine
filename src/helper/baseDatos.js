@@ -8,7 +8,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"English",
         director:" David Leitch",
-        actor:["Brad Pitt","Bad Bunny","Joey King"]
+        actores:["Brad Pitt","Bad Bunny","Joey King"]
 
     },
     {
@@ -20,7 +20,7 @@ export let peliculas = [
         clasificación:"Adulto",
         idioma:"Español",
         director:"Castille Landon",
-        actor:["Hero Fiennes","Josephine Langford","Carter Jenkins"]
+        actores:["Hero Fiennes","Josephine Langford","Carter Jenkins"]
     },
     {
         nombre:"Invitación al infierno",
@@ -31,7 +31,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"Español",
         director:"Jessica M. Thompson",
-        actor:["Nathalie Emmanuel","Thomas Doherty","Stephanie Corneliussen"]
+        actores:["Nathalie Emmanuel","Thomas Doherty","Stephanie Corneliussen"]
     },
     {
         nombre:"Gemelo siniestro ",
@@ -42,7 +42,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"Español",
         director:" Taneli Mustonen",
-        actor:["Teresa Palmer","Tristan Ruggeri","Steven Cree"]
+        actores:["Teresa Palmer","Tristan Ruggeri","Steven Cree"]
     },
     {
         nombre:"Thor love and thurder ",
@@ -53,7 +53,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"Subtitulos",
         director:"Taika Waititi",
-        actor:["Chris Hemsworth","Christian Bale","Natalie Portman"]
+        actores:["Chris Hemsworth","Christian Bale","Natalie Portman"]
     },
     {
         nombre:"Telefono negro",
@@ -64,7 +64,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"English",
         director:"Scott Derrickson",
-        actor:["Ethan Hawke","Mason Thames","miguel cazarez mora"]
+        actores:["Ethan Hawke","Mason Thames","miguel cazarez mora"]
     },
     {
         nombre:"Bestia",
@@ -74,8 +74,8 @@ export let peliculas = [
         sinosis:"El Doctor Nate Samuels regresa a Sudáfrica, lugar en el que conoció a su difunta mujer, con sus dos hijas para pasar unos días en la Sabana viendo la fauna del lugar.",
         clasificación:"+12",
         idioma:"Español",
-        director:"",
-        actor:["","",""]
+        director:" Baltasar Kormákur",
+        actores:["Idris Elba","Sharlto Copley","leah sava jeffries"]
     },
     {
         nombre:"El perro samurai",
@@ -86,7 +86,7 @@ export let peliculas = [
         clasificación:"+12",
         idioma:"Español",
         director:"Baltasar Kormákur",
-        actor:["Idris Elba","Sharlto Copley","leah sava jeffries"]
+        actores:["Idris Elba","Sharlto Copley","leah sava jeffries"]
     },
     {
         nombre:"Una madre",
@@ -97,7 +97,7 @@ export let peliculas = [
         clasificación:"+18",
         idioma:"Español",
         director:"Diógenes Cuevas",
-        actor:["Marcela Valencia","Eva Bianco","José Restrepo"]  
+        actores:["Marcela Valencia","Eva Bianco","José Restrepo"]  
     },
     {
         nombre:"El demonio en el espejo",
@@ -108,6 +108,6 @@ export let peliculas = [
         clasificación:"+20",
         idioma:"Subtitulos",
         director:"Andrew Mecham, Matthew Whedon",
-        actor:["Jan Broberg","Addy Miller","Caroline Labrum"]
+        actores:["Jan Broberg","Addy Miller","Caroline Labrum"]
     }
 ]

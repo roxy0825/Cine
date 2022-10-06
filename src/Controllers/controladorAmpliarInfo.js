@@ -21,7 +21,7 @@ foto.src=datosPeliculasSeleccionada.poster
 let titulo=document.getElementById("titulo")
 titulo.textContent=nombre
 
-let sinopsisPelicula=document.getElementById("sinopsisPelicula")
+let sinopsisPelicula=document.getElementById("sinopsis")
 sinopsisPelicula.textContent=sinopsis
 
 let generoPelicula=document.getElementById("generoPelicula")
@@ -33,7 +33,7 @@ generoPelicula.textContent=duracion
 let actorPelicula = document.getElementById("actorPelicula")
 actorPelicula.textContent=actor
 
-let clasifipelicula=document.getElementById("clasifipelicula")
+let clasifipelicula=document.getElementById("clasifiPelicula")
 actorPelicula.textContent=clasificacion
 
 let idiomaPelicula = document.getElementById("idiomaPelicula")

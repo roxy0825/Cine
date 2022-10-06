@@ -40,17 +40,17 @@ export function pintarPeliculas(peliculas,fila){
         poster.src=pelicula.poster
     
         //4. Creamos el nombre de la pelicula
-        let nombre = document.createElement('h1')
+        let nombre = document.createElement('h3')
         nombre.classList.add('card-title','text-center')
         nombre.textContent = pelicula.nombre
     
         //5. Creamos el genero de cada pelicula
-        let genero = document.createElement("h2")
+        let genero = document.createElement("p")
         genero.classList.add("text-start")
         genero.textContent = "Genero: "+pelicula.genero
     
         //6. Creamos el idioma de cada pelicula
-        let idioma=document.createElement("h6")
+        let idioma=document.createElement("p")
         idioma.classList.add("fw-bold")
         idioma.textContent="Idioma: "+pelicula.idioma
     
