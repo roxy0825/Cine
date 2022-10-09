@@ -9,7 +9,7 @@ let nombre=datosPeliculasSeleccionada.nombre
 let genero=datosPeliculasSeleccionada.genero
 let sinopsis=datosPeliculasSeleccionada.sinopsis
 let duracion=datosPeliculasSeleccionada.duracion
-let actor=datosPeliculasSeleccionada.actor
+let actor=datosPeliculasSeleccionada.actores
 let clasificacion=datosPeliculasSeleccionada.clasificacion
 let idioma=datosPeliculasSeleccionada.idioma
 let director=datosPeliculasSeleccionada.director
@@ -28,13 +28,13 @@ let generoPelicula=document.getElementById("generoPelicula")
 generoPelicula.textContent=genero
 
 let duracionPelicula=document.getElementById("duracionPelicula")
-generoPelicula.textContent=duracion
+duracionPelicula.textContent=duracion
 
 let actorPelicula = document.getElementById("actorPelicula")
 actorPelicula.textContent=actor
 
 let clasifipelicula=document.getElementById("clasifiPelicula")
-actorPelicula.textContent=clasificacion
+clasifipelicula.textContent=clasificacion
 
 let idiomaPelicula = document.getElementById("idiomaPelicula")
 idiomaPelicula.textContent=idioma

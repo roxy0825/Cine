@@ -74,7 +74,7 @@ export function pintarPeliculas(peliculas,fila){
 
      let director=document.createElement("P")
      director.classList.add("text-left","tamano")
-     director.textContent="Director: "+pelicula.Director
+     director.textContent="Director: "+pelicula.director
      
      //11. clasificacion
       
