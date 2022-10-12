@@ -14,7 +14,9 @@ hilera.forEach(function(asientos){
 
     if(asientos.estado==0){
         fotoSilla.src="../../assets/img/silla.png"
-    }else if(asientos.estado==2){
+    }else if(asientos.estado==1){
+        fotoSilla.src="../../assets/img/silla3.png"
+    }else{
         fotoSilla.src="../../assets/img/silla2.png"
     }
 

@@ -92,7 +92,7 @@ export let peliculas = [
         nombre:"Una madre",
         genero:"Drama",
         duracion:"143",
-        poster:"https://firebasestorage.googleapis.com/v0/b/cinerg-2ad15.appspot.com/o/6.png?alt=media&token=943f58a8-ffe4-43dc-81ca-11c615b14d8c",
+        poster:"https://firebasestorage.googleapis.com/v0/b/cinerg-2ad15.appspot.com/o/7.jpg?alt=media&token=7e3739b2-ee90-4ac9-8127-bad06c099025",
         sinopsis:"cuenta la historia de cómo Amalia entreteje con su humor y su entrega particular una red de hilos invisibles con la que une y protege a los suyos. de actuar y no está dispuesta a que nada la aparte de su cometido. condición humana es capaz de demostrarse y mostrar cuando ahonda en su mejor versión.",
         clasificacion:"+18",
         idioma:"Español",
