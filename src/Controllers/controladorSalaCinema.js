@@ -59,11 +59,15 @@ let pelicula=JSON.parse(localStorage.getItem("peliculaSeleccionada"));
   })
   
 
+  let headers=document.createElement("div");
+  headers.classList.add("card-header", "bg-transparent", "border-success", "text-success")
+
+
   let divBody=document.createElement("div");
-  divBody.classList.add("card-body")
+  divBody.classList.add("card-body", "text-success")
 
   let h1=document.createElement("h1");
-  h1.classList.add("card-title");
+  h1.classList.add("card-body");
 
   h1.textContent=pelicula.nombre;
   
@@ -73,28 +77,30 @@ let pelicula=JSON.parse(localStorage.getItem("peliculaSeleccionada"));
 
 
   let p=document.createElement("h3");
-  p.classList.add("card-text");
-  p.textContent="PUESTOS SELECCIONADOS: "+ mostrarpuesto
+  p.classList.add("card-body");
+  p.textContent ="PUESTOS SELECCIONADOS: "+ mostrarpuesto
   let precio=7000;
 
   let divPrecio=document.createElement("h3");
   divPrecio.classList.add("card-text");
-  divPrecio.textContent = "PRECIO SILLA: "+ precio;
+  divPrecio.textContent ="PRECIO SILLA: "+ precio;
 
   let cantidad=document.createElement("h3");
   cantidad.classList.add("card-text");
-  cantidad.textContent = "CAANTIDAD SILLAS: "+ contadorseleccionado;
+  cantidad.textContent ="CANTIDAD SILLAS: "+ contadorseleccionado;
 
   let valortotal=document.createElement("h3");
   valortotal.classList.add("card-text");
-  valortotal.textContent = "VALOR TOTAL RESERVA: "+(precio*contadorseleccionado);
+  valortotal.textContent ="VALOR TOTAL RESERVA: "+(precio*contadorseleccionado);
 
-  divBody.appendChild(h1);
+  headers.appendChild(h1);
   divBody.appendChild(p);
   divBody.appendChild(divPrecio);
   divBody.appendChild(cantidad);
   divBody.appendChild(valortotal);
+  pintarreserva.appendChild(headers);
   pintarreserva.appendChild(divBody);
+
 
 
 
